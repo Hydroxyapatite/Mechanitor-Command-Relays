@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<CommandRelayTunedTo>Tuned to</CommandRelayTunedTo>
+	<CommandRelayTuneTo>Tune to</CommandRelayTuneTo>
+	<CommandRelayTuningTo>Tuning to</CommandRelayTuningTo>
+	<CommandRelayRetuneTo>Retune</CommandRelayRetuneTo>
+	<CommandRelayTuningDesc>Tune this command relay to a mechanitor. Tuning will take {0} to complete.</CommandRelayTuningDesc>
+	<CommandRelayRetuningDesc>Retune this command relay to another mechanitor. Retuning will take {0} to complete.</CommandRelayRetuningDesc>
+</LanguageData>
