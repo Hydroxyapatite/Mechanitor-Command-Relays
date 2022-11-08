@@ -65,6 +65,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="Patches\PatchMechanitorTracker_CanCommandTo.cs" />
     <Compile Include="Patches\PatchMechanitorUtility_InMechanitorCommandRange.cs" />
+    <Compile Include="Patches\PatchPawn_MechanitorTracker_CanControlMechs_Getter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

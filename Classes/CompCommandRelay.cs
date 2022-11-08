@@ -1,5 +1,6 @@
 ﻿using Hydroxyapatite_MechanitorCommandRelays.Classes;
 using RimWorld;
+using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -174,7 +175,7 @@ namespace Hydroxyapatite_MechanitorCommandRelays
             Graphics.DrawMesh(MeshPool.plane10, matrix, material, 0);
 
             // If the mechanitor is spawned and any of their mechs are drafted:
-            if (tunedTo?.Spawned == true && tunedTo?.mechanitor?.AnySelectedDraftedMechs == true)
+            if ((tunedTo?.Spawned == true || tunedTo?.IsCaravanMember() == true) && tunedTo?.mechanitor?.AnySelectedDraftedMechs == true)
             {
                 // draw the command range as a circle, adding cells that can be commanded to outside of the initially drawn radius.
                 GenDraw.DrawRadiusRing(parent.Position, CompProperties_CommandRelay.relayCommandRange, Color.white, (IntVec3 c) => parent.Position.DistanceTo(c) < Math.Pow(CompProperties_CommandRelay.relayCommandRange, 2));

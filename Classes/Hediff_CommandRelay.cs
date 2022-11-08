@@ -62,7 +62,7 @@ namespace Hydroxyapatite_MechanitorCommandRelays
                         tunedRelays.Add(item);
                     }
                 }
-            } 
+            }
 
             cachedTunedCommandRelays = tunedRelays;
             MechanitorRelayCacheHelper.relayCache[pawn.mechanitor] = tunedRelays;
